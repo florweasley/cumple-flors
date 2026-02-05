@@ -1,6 +1,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
 <html>
 <head>
+  <link rel="stylesheet" href="css/styles.css">
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
   <meta http-equiv="Content-Style-Type" content="text/css">
   <title></title>
@@ -13,6 +14,48 @@
   </style>
 </head>
 <body>
+  <main class="app">
+
+  <section id="step-name" class="card active">
+    <h1>🎉 Estás invitadx</h1>
+    <p>Antes de contarte todo… ¿cómo te llamás?</p>
+
+    <input type="text" id="guestName" placeholder="Tu nombre">
+    <button id="startBtn">Entrar ✨</button>
+  </section>
+
+  <section id="step-info" class="card">
+    <h2 id="welcome"></h2>
+
+    <p>📅 <strong>Sábado 22 de febrero · 21 hs</strong></p>
+
+    <div class="links">
+      <a href="https://www.google.com/calendar/render?action=TEMPLATE&text=Cumple+de+Flora&dates=20250222T210000/20250223T030000" target="_blank">
+        Agendar en Google Calendar
+      </a>
+
+      <a href="https://maps.google.com" target="_blank">
+        Ver dirección en Maps
+      </a>
+    </div>
+
+    <button id="confirmBtn">Confirmar asistencia</button>
+  </section>
+
+  <section id="step-rsvp" class="card">
+    <h2>¿Venís?</h2>
+
+    <div class="choices">
+      <button id="yesBtn">Sí, obvio 💃</button>
+      <button id="noBtn">No puedo 😢</button>
+    </div>
+
+    <div id="extra"></div>
+  </section>
+
+</main>
+
+<script src="js/app.js"></script>
 <p class="p1"><span class="s1">&lt;!DOCTYPE html&gt;</span></p>
 <p class="p1"><span class="s1">&lt;html lang="es"&gt;</span></p>
 <p class="p1"><span class="s1">&lt;head&gt;</span></p>
